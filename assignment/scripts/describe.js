@@ -6,14 +6,15 @@
 // (Don't just say 'we console log the variable' -- instead say something like 'we console log 'yes'')
 
 
-// 0. WRITE YOUR DESCRIPTION HERE
+// 0. We defined the variable number and set the value to a number value of 1. Then we used the incremental operator to add the number value 1 to the variable number, which equal 2. 
+//Lastly we use a conditional statement to determine if our variable number is greater or equal to 2, which it is. Then we console log 'yes'.
 // //EXAMPLE. We make a variable called number and set it to 1 as a number.
 // Then we increment the number variable. Number is now 2.
 // We check if number is greater than or equal to 2. 2 is equal to 2, so
 // we console.log 'yes'.
 
 //CODE
-/*
+/* 
 let number = 1;
 
 number++;
@@ -25,7 +26,9 @@ if (number >= 2) {
 */
 
 
-// 1. WRITE YOUR DESCRIPTION HERE
+// 1. We define the variable name and set the value to a string 'Dane'. 
+//Then we use conditional if else statements and determine if the name variable is a true exact match to the string value 'Mary' then we console log 'Hi Mary'. 
+//Otherwise, using the else statment and console.log 'How do you do?' if the name variable is any other string value, which is what this code does.
 // 
 // 
 // 
@@ -44,8 +47,12 @@ if (name === 'Mary') {
 
 */
 
-// 2. WRITE YOUR DESCRIPTION HERE
-// 
+// 2. We define a variable called secret but haven't added a value to it yet. Then we define another variable called code with the number value of 123. 
+// Then we use an if conditional statement to determine whether the variable code has an exact match of the number value 123.
+//If this is true, then the variable secret gets assigned the value of 'super' and the the variable code is multiplied by 2. There's a second if conditional statement.
+//For this one if the code variable's value is more than 250 then the variable super is assigned the value 'duper'.
+//Finally we console log the value of the variable secret which is 'super'.
+
 // 
 // 
 //
@@ -69,7 +76,12 @@ console.log(secret)
 
 */
 
-// 3. WRITE YOUR DESCRIPTION HERE
+// 3. The variable isStudent is defined with the boolean value of true. The variable age is defined with the number value of 34.
+//And the variable zip is defined with the number value of 55407. Next we use an if statement to determine if the isStudent variable's value is an exact match to the boolean value true,
+//and also the zip variable is greater than 8000. If so then we console.log 'You're a student on the West Coast!'. After this, is an else if statement,
+//that determines whether the variable isStudent is a exact match to the boolean value of false or the age variable has a value less than 30 then we console.log 'What are your hobbies?'.
+//Thirdly, there's another else if conditional statement, that checks if the isStudent variable is an exact match to the true boolean value then we console.log 'Welcome to Prime'.
+//Lastly, there's an else statement that runs if none of the conditional statements previously were run. And for this we console.log 'How about the weather?'.
 // 
 // 
 // 
@@ -134,6 +146,11 @@ let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+//FIX - Only colorOne was set to 'purple' not both colorOne and colorTwo.
+//Should be if (mix === true) {
+  colorOne = colorTwo = 'purple';
+}
+
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -146,6 +163,11 @@ if (mix === true) {
 /*
 let temp = 40;
 const time = 4;
+
+//FIX - We should use the compound conditional && instead of || which means or, since we want to check if both the temp and time conditions are true.
+//Should be, if (temp > 39 && time >= 4) {
+  console.log('throw away the food!');
+}
 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
@@ -160,6 +182,16 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+//FIX - We should switch what is logged to the console for the if and else conditional statements.
+// Instead of 'no entry' when minAge is less than or equal to age it should log 'enter'. 
+//And for the else conditional statement it should log 'no entry' if minAge isn't less than or equal to the age.
+//Should be, if(minAge <= age) {
+  console.log('enter');
+} else {
+  console.log('no entry');
+}
+
+/*
 if(minAge <= age) {
   console.log('no entry');
 } else {
